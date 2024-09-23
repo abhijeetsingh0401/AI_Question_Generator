@@ -135,6 +135,25 @@ function App() {
           </button>
         </div>
       </div>
+
+      <div>
+        {generatedQuestions?.map(({ question, options }, i) => {
+          return (
+            <div key={i} className="question-list">
+              <h4>{question}</h4>
+              <ul>
+                {options.map((option, idx) => {
+                  return (
+                    <li key={idx}>
+                      {idx + 1}. {option}
+                    </li>
+                  );
+                })}
+              </ul>
+            </div>
+          );
+        })}
+      </div>
     </div>
   );
 }

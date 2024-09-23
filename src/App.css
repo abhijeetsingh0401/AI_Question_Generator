@@ -82,3 +82,18 @@
 .submit-button:hover {
   background: linear-gradient(to left, #e67e22, #f1c40f);
 }
+
+
+.question-list {
+  margin-top: 20px;
+}
+
+.question-list > h4 {
+  font-size: 20px;
+  margin-bottom: 10px;
+}
+
+.question-list > ul {
+  font-size: 16px;
+  list-style: none;
+}
